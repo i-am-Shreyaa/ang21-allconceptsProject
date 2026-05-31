@@ -39,5 +39,10 @@ onNewInput(event: Event) {
   const value = (event.target as HTMLInputElement).value;
   console.log(value);
 }
+
+ empName='John Doe';
+onChange(){
+
+}
  
 }

@@ -1,1 +1,21 @@
 <app-child (save)="onSave($event)"></app-child>
+
+<p> {{ uName }} </p>
+<input #userName>
+<button (click)="onChange()">CHange Name</button>
+
+//Using trackby
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Employee Name</th>
+            <th>Employee Id</th>
+        </tr>
+        @for(emp of empNames; track emp.id){
+        <tr>
+            <td>{{ emp.userName}}</td>
+            <td>{{ emp.id}}</td>
+        </tr>
+        }
+    </tbody>
+</table>
